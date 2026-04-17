@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML  | Form </title>
+</head>
+<>
+    <!-- Form
+       -> used to collect data/information from the user
+       ->
+       Types of Form
+        *User pespective=> text , password , Number , Email ,date , files , color
+        *Developerd pespective => button , checkbox => skills, radio button => gender ,dropdown menu =>city
+         ->Syntax:
+         <form action="url" method="get/post">
+            <input type="text" name="username" placeholder="Enter your name">
+            <input type="password" name="password" placeholder="Enter your password">
+            <input type="submit" value="Submit">
+        </form>-->
+    
+
+    <!-- form elements
+     <input type="text" name="username" placeholder="Enter your name">  =>Accepts all types of data from the user , by changing the type attribute 
+     => Single element can accept only one type of data from the user, inline
+     Data from the user is known as (value)
+     1.<label> -> used to provide a label for the form element ,to identify the purpose of input field 
+     -->
+    <label for="username">Enter your name:</label>
+    <input type="text" id="username" placeholder="username" value=""
+    minlength="4"maxlength="20" accept="[a-zA-Z0-9]">
+    <br><br>
+
+    <label for="password">Enter the password:</label>
+    <input type="password" id="password" placeholder="password" value="">
+    <br><br>
+
+    <label for="email">Enter your email:</label>
+    <input type="email" id="email" placeholder="email">
+    <br><br>
+
+    <label for="age">Enter your age:</label>
+    <input type="number" id="age" placeholder="age" min="0" max="120">
+    <br><br>
+
+    <label for="color">Choose a color:</label>
+    <input type="color" name="color" id="color">
+    <br><br>
+
+    <label for="date">Enter your date of birth:</label>
+    <input type="date" name="date" id="date">
+
+    <br><br>
+
+    <label for="datetime" name="">Enter your date and time of birth:</label>
+    <input type="datetime" name="datetime" id="datetime">
+    <br><br>
+
+    <label for="datetime-local" name="">Enter your date and time of birth:</label>
+    <input type="datetime-local" name="datetime-local" id="datetime-local">
+    <br><br>
+
+    <label for="file" name="">Upload your file:</label>
+    <input type="file" name="file" id="file">
+    <br><br>
+    <label for="" name="" >Enter the number</label>
+    <input type="number" name="" id="">
+
+
+    
+    <br><br>
+
+    <label for="range" name="">Enter the range:</label>
+    <input type="range" name="range" id="range" min="0" max="120">
+    <br><br>
+
+    <label for="search" name="">Search:</label>
+    <input type="search" name="search" id="search" placeholder="Search...">
+    <br><br>
+
+    <label for="tel" name="">Enter your phone number:</label>
+    <input type="tel" name="tel" id="tel" placeholder="Enter your phone number">
+    <br><br>
+
+    <label for="url" name="">Enter your website URL:</label>
+    <input type="url" name="url" id="url" placeholder="https://www.example.com">
+    <br><br>
+
+    <label for="time" name="">Enter your time of birth:</label>
+    <input type="time" name="time" id="time">
+
+    <br><br>
+    <hr color="gray">
+
+    <!-- SKILLS -->
+    <label for="skills">Select your skills:</label>
+    <br>
+    <input type="checkbox" id="" name="" value="JavaScript">
+    <label for="">JavaScript</label>
+    <input type="checkbox" id="" name="" value="Python">
+    <label for="">Python</label>
+    <input type="checkbox" id="" name="" value="Java">
+    <label for="">Java</label>
+    <input type="checkbox" id="" name="" value="Html">
+    <label for="" >Html</label>
+    <input type="checkbox" id="" name="" value="Css">
+    <label for="">Css</label>
+    <input type="checkbox" id="" name="" value="SQL">
+    <label for="">SQL</label>
+
+    <br><br>
+    <hr color=" gray">
+
+    <!-- Creating a Radio Button -->
+    <input type="radio" name="domain" id="">
+    <label for="">Frontend</label>
+    <input type="radio" name="domain" id="">
+    <label for="">Backend</label>
+    <input type="radio" name="domain" id="">
+    <label for="">Fullstack</label>
+
+    <br><br>
+    <hr color="gray">
+
+    <!-- Creating Dropdown menu  / ComboBox 
+    Using JavaScript -->
+
+    Using JavaScript
+
+    <p>Choose your Year of Pass-Out:</p>
+    <select name=""  id="">
+    <option value=""hidden> ------ Choose here-----</option>
+    </select>
+
+    <script>
+        const dropDown = document.querySelector("select")
+        let yearNow = new Date().getFullYear()
+        let valueYear = yearNow
+        for(let i=0; i<=10; i++)
+        {
+            dropDown.innerHTML += `<option value=${valueYear--}>${yearNow--}</option>`
+        }
+    </script>
+    <br><br>
+    <hr color=" red">
+    Using HTML
+    <hr>
+
+    <!-- Creating Dropdown menu  / ComboBox 
+     
+    Using HTML'''''-->
+     
+
+    <p>Choose your Year of Pass-Out:</p>
+    <select name=""  id="">
+        <option value=""hidden> ------ Choose here-----</option>
+        <option value="">2026</option>
+        <option value="">2025</option>
+        <option value=""selected>2024</option>
+        <option value="">2023</option>
+        <option value="">2022</option>
+        <option value="">2021</option>
+    </select>
+
+    <br><br> 
+    <hr>
+
+    <!-- Text area   -> used for Large text-->
+
+    <textarea name="" id="" cols="30" rows="10" placeholder="What's on your Mind....." maxlength="150"></textarea>
+
+    <hr>
+    <!-- Button  -->
+
+    <button>Button</button>
+
+    <input type="button" value="Button">
+
+    <input type="submit" value="Submit">
+
+    <input type="reset" value="Reset">
+
+
+    <br><br>
+
+    <!-- Login Page -->
+
+    <form action="Tags_and_Attributes.html">
+        <fieldset style="width: 25%;">
+            <legend><h1>Login</h1></legend>
+            <table cellspacing="15">
+
+                <tr>
+                    <td><label for="">UserNmae: </label></td>
+                    <td><input type="text" name="" id=""required></td>
+                </tr>
+                <tr>
+                    <td><label for="">Password: </label></td>
+                    <td><input type="password" name="" id=""required></td>
+                    
+                </tr>
+
+                <tr>
+                    <td><input type="checkbox" name="" id=""></td>
+                    <td><label for="">Show Password</label></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" align="center">
+                    <input type="submit" value="Login">&nbsp;&nbsp;&nbsp;    
+                    <input type="button" value="Cancel">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" align="center">
+                        <span>Forgot Password? <a href="">Reset</a></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <span>New User? <a href="">Register</a></span>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+
+</body>
+</html>

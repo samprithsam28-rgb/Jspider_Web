@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML| List</title>
+</head>
+<body>
+    <!-- List
+    => Grouping set related items 
+    
+    1. UnOrdered List
+    2. Ordered List
+    3. Definition List
+    
+    => Unordered List :
+    Creating a list without any perticular order,
+
+    -> <ul> <li>
+    
+    Syntax :
+    <ul>
+    <li> </li>
+    <li></li>
+    <li>,/li>
+    </ul> 
+    
+    => Supported Marker -> disc(def) , circle ,square , none
+    
+    
+    => Ordered List 
+    -> Creating a List in ascending or descending order
+    -> <ol></ol> , <li> </li>
+    => Syntax:
+     <ol>
+    <li> </li>
+    <li></li>
+    <li>,/li>
+    </ol> 
+    => Marker -> disit ,lowercase ,uppercase ,alphabet ,  roman 
+    
+    =>Definition List
+    
+    Syntax :
+    <dl>
+    <dt></dt>
+    <dt></dt>
+    <dt></dt>
+    <dt></dt>
+    </dl> 
+    <dl ->Definition List -->
+
+
+    <!-- Unordered -->
+
+    <p> List of IPL Teams 2026 🚩</p>
+
+    <ul style="list-style-type: circle;">
+    <li>Royal Challemgers Bengaluru</li>
+    <ul style="list-style-type:decimal">
+    <li>Abhishek Sharma</li>
+    <li>Ishan Kishan</li>
+    </ul>
+    <li>Chennai Super Kings</li>
+    <li>Sun Risers Hyderabad</li>
+    <li>Mumbai Indians</li>
+    <li>Gujarat Titans</li>
+    <li>Punjab Kings</li>
+    <li>Rajasthan Royals</li>
+    <li>Kolkata Night Riders</li>
+    <li>Delhi Capitals</li>
+    <li>Lucknow Super Gaints</li></ul>
+    <hr color="gray">
+    <br><br>
+
+
+    <!-- Ordered List -->
+
+    <strong> List a Job designation in IT</strong>
+
+    <ol type="A" start="" reversed>
+    <li>Full Stack Web Development</li>
+    <li>Associate Software Engineer</li>
+    <li>Software Engineer</li>
+    <li>Senior Software Engineer</li>
+    <li>Team Lead</li>
+    <li>Scrum Master</li>
+    <li>Manager</li>
+    <li>Product Manager</li>
+    <li>COO</li>
+    <li>CEO</li>
+    </ol>
+
+    <hr color="gray">
+    <br><br>
+
+    <!-- Defination List -->
+
+    <dl>
+    <dt>Tea Varieties</dt>
+
+    <dd>Black Tea</dd>
+    <dd>Ginger Tea</dd>
+    <dd>Green Tea</dd>
+    <dd>Lime</dd>
+    <dd>Masala Tea</dd>
+    
+    <dt>Coffe Varieties</dt>
+
+    <dd>Black coffe</dd>
+    <dd>Filter Coffe</dd>
+    <dd>Cold Coffe</dd>
+    </dl>
+
+    <br><br>
+    <hr color="gray">
+
+    <!-- Sort List using JS -->
+
+    <ol id="jobList"></ol>
+    <script>
+    const listOfJobs = [ 
+    "Full Stack Web Development",
+    "Associate Software Engineer",
+    "Software Engineer",
+    "Senior Software Engineer",
+    "Team Lead",
+    "Scrum Master",
+    "Manager",
+    "Product Manager",
+    "COO",
+    "CEO",
+    ];
+
+    let sorted = listOfJobs.sort();
+    sorted.map((item)=>{
+    document.getElementById("jobList").innerHTML += `<li>${item}</li>`
+    })
+</script>   
+</body>
+</html>

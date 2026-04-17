@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML| Table </title>
+</head>
+<body>
+    <!-- Table
+
+    =>  Arranging data in rows and columns
+    <table> <tr> , <th> , <td>
+    Syntax:
+    <table>
+        <tr>
+            <th>head </th>
+            <th>head </th>
+            <th>head </th>
+        </tr>
+
+        <tr>
+            <td>data </td>
+            <td>data </td>
+            <td>data </td>
+        </tr>
+        
+        <tr> 
+            <td>data </td>
+            <td>data </td>
+            <td>data </td>
+        </tr>
+    </table>-->
+
+
+    <!--row1  -->
+
+    <!-- cellPadding => gives space inside the cells
+        cellSpacing => gives space between one  cell to another cell
+        border => gives border thickness to the table 
+        align="center" => to align the table in center
+        style="text-align: center;" => to align the text in center of the cell
+        <table> => arranging data in rows and columns
+        <th> => table header
+        <tr> => table row
+        <td> => table data-->
+
+    <table border="1" cellspacing="0" cellpadding="10" align="center" style="text-align: center; border-collapse: collapse; background-color: lightgray;">
+    <tr>
+    <th colspan="7" bgcolor="lightblue">Passenger Bus Booking Details</th>
+    <!-- <th>Passenger Bus Booking Details</th>
+    <th>Passenger Bus Booking Details</th>
+    <th>Passenger Bus Booking Details</th>
+    <th>Passenger Bus Booking Details</th>
+    <th>Passenger Bus Booking Details</th>
+    <th>Passenger Bus Booking Details</th> -->
+    </tr>
+
+    <tr bgcolor="lightgreen">
+        
+    <th>S/no </th>
+    <th>Name </th>
+    <th>Age </th>
+    <th>Gender </th>
+    <th>Contact </th>
+    <th>Source</th>
+    <th>Destination </th>
+
+    <!-- row2  -->
+
+    <tr>
+        <td>01</td>
+        <td>Samprith</td>
+        <td>25</td>
+        <td>Male</td>
+        <td>894567890</td>
+        <td bgcolor="red">Mysore</td>
+        <td>bengalore</td>
+    </tr>
+
+    <!-- row3  -->
+
+    <tr>
+        <td>02</td>
+        <td>Sanjana</td>
+        <td>28</td>
+        <td>Female</td>
+        <td>987654321</td>
+        <td>Bangalore</td>
+        <td rowspan="2">Chennai</td>
+    </tr>
+    <!-- row4 -->
+
+    <tr>
+        <td>03</td>
+        <td>Archana</td>
+        <td>26</td>
+        <td >Female</td>
+        <td>876543210</td>
+        <td>Bengalore</td>
+        <!-- <td >Chennai</td> -->
+    </tr>
+    <!-- row5 -->
+     <tr>
+        <td>04</td>
+        <td>Vikram</td>
+        <td>30</td>
+        <td>Male</td>
+        <td>765432109</td>
+        <td>Hyderabad</td>
+        <td rowspan="2">Delhi</td>
+    </tr>
+
+    <!-- row6 -->
+        <tr>
+            <td>05</td>
+            <td>Meera</td>
+            <td>27</td>
+            <td>Female</td>
+            <td>654321098</td>
+            <td>Mumbai</td>
+            <!-- <td>Delhi</td> -->
+        </tr>
+    </table>
+</body>
+</html>
